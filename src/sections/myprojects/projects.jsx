@@ -1,7 +1,9 @@
 import React from "react";
-import tlweb from "../../assets/tlimage.png"
-import IIC from "../../assets/IIC-IITH.png"
-import Micromosue from "../../assets/Micromouse.png"
+import tlweb from "../../assets/tlimage.png";
+import IIC from "../../assets/IIC-IITH.png";
+import Micromosue from "../../assets/Micromouse.png";
+import Gymkhana from "../../assets/Gymkhana.png";
+import Tayog from "../../assets/Tayog.png"
 const Card = ({ imageSrc, title, description, link }) => {
     return (
         <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-96 transform transition-transform hover:-translate-y-2 hover:shadow-2xl hover:border-2 hover:border-blue-500">
@@ -37,10 +39,22 @@ const CardsGrid = () => {
             description: "Micromouse: tinkererslabiith.github.io/TL-Maze-Mouse/",
             link: "https://tinkererslabiith.github.io/TL-Maze-Mouse/",
         },
+        {
+            imageSrc: Gymkhana,
+            title: "official website of Gymkhana",
+            description: "Gymkhana: gymkhana.iith.ac.in",
+            link: "https://gymkhana.iith.ac.in/",
+        },
+        {
+            imageSrc: Tayog,
+            title: "official website of Gymkhana",
+            description: "Gymkhana: gymkhana.iith.ac.in",
+            link: "https://gymkhana.iith.ac.in/",
+        },
     ];
 
     return (
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 md:space-x-6 px-4 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-12">
             {cards.map((card, index) => (
                 <Card
                     key={index}
