@@ -1,5 +1,6 @@
 import React from 'react';
-import Kaif from "../../assets/image.png"
+import Kaif from "../../assets/image.png";
+
 const ProfileSection = () => {
   return (
     <div className="bg-gray-900 text-white flex items-center justify-center min-h-screen">
@@ -10,13 +11,14 @@ const ProfileSection = () => {
               src={Kaif}
               alt="Mohamed Kaif"
               className="w-full h-auto"
+              loading="lazy"
             />
           </div>
         </div>
         <div>
           <h1 className="text-4xl font-bold mb-4">Hallo, <br /> I am Mohamed Kaif</h1>
           <p className="text-lg">
-            A prefinal year undergraduate student at the Indian Institute of Technology Hyderabad which started in 2008. I am a passionate learner and a tech enthusiast. I am a Full Stack Developer and a Competitive Programmer. I am a quick learner and a team player. 
+            A prefinal year undergraduate student at the Indian Institute of Technology Hyderabad which started in 2008. I am a passionate learner and a tech enthusiast. I am a Full Stack Developer and a Competitive Programmer. I am a quick learner and a team player.
           </p>
         </div>
       </div>
