@@ -3,7 +3,8 @@ import tlweb from "../../assets/tlimage.png";
 import IIC from "../../assets/IIC-IITH.png";
 import Micromosue from "../../assets/Micromouse.png";
 import Gymkhana from "../../assets/Gymkhana.png";
-import Tayog from "../../assets/Tayog.png"
+import Tayog from "../../assets/Tayog.png";
+
 const Card = ({ imageSrc, title, description, link }) => {
     return (
         <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-96 transform transition-transform hover:-translate-y-2 hover:shadow-2xl hover:border-2 hover:border-blue-500">
@@ -41,29 +42,32 @@ const CardsGrid = () => {
         },
         {
             imageSrc: Gymkhana,
-            title: "official website of Gymkhana",
+            title: "Official Website of Gymkhana",
             description: "Gymkhana: gymkhana.iith.ac.in",
             link: "https://gymkhana.iith.ac.in/",
         },
         {
             imageSrc: Tayog,
-            title: "official website of Gymkhana",
-            description: "Gymkhana: gymkhana.iith.ac.in",
+            title: "Official Website of Tayog",
+            description: "Tayog: gymkhana.iith.ac.in",
             link: "https://gymkhana.iith.ac.in/",
         },
     ];
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-12">
-            {cards.map((card, index) => (
-                <Card
-                    key={index}
-                    imageSrc={card.imageSrc}
-                    title={card.title}
-                    description={card.description}
-                    link={card.link}
-                />
-            ))}
+        <div className="mt-12 px-4 md:px-12">
+            <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {cards.map((card, index) => (
+                    <Card
+                        key={index}
+                        imageSrc={card.imageSrc}
+                        title={card.title}
+                        description={card.description}
+                        link={card.link}
+                    />
+                ))}
+            </div>
         </div>
     );
 };
