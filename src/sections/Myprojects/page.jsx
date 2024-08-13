@@ -7,7 +7,7 @@ import Tayog from "../../assets/Tayog.png";
 
 const Card = ({ imageSrc, title, description, link }) => {
     return (
-        <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-96 transform transition-transform hover:-translate-y-2 hover:shadow-2xl hover:border-2 hover:border-blue-500">
+        <div id ="Projects" className="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-96 transform transition-transform hover:-translate-y-2 hover:shadow-2xl hover:border-2 hover:border-blue-500">
             <img src={imageSrc} alt={title} className="w-full h-48 object-cover" />
             <div className="p-4">
                 <h3 className="text-xl font-bold text-white mb-2">{title}</h3>

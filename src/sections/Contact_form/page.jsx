@@ -3,7 +3,7 @@ import React from 'react';
 
 const ContactForm = () => {
   return (
-    <div className="flex justify-center items-center h-screen bg-bgColor text-white">
+    <div id="Contact" className="flex justify-center items-center h-screen bg-bgColor text-white">
       <div className="grid grid-cols-2 gap-10 p-8">
         <div>
           <h2 className="text-3xl font-bold mb-4">GET IN TOUCH</h2>

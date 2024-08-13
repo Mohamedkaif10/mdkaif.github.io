@@ -3,7 +3,7 @@ import Kaif from "../../assets/image.png";
 
 const ProfileSection = () => {
   return (
-    <div className="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+    <div id ="Intro" className="bg-gray-900 text-white flex items-center justify-center min-h-screen">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="relative mb-8 md:mb-0 md:mr-8">
           <div className="border-4 border-gray-600 p-2">

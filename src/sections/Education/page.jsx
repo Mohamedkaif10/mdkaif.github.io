@@ -2,7 +2,7 @@ import IITH from "../../assets/IITHLOGONEW.png";
 
 const Education = () => {
     return (
-        <div className="flex flex-col justify-center items-center h-screen bg-white text-center">
+        <div id="Education" className="flex flex-col justify-center items-center h-screen bg-white text-center">
             <h2 className="text-3xl font-bold mb-8">Education</h2>
             <div className="flex flex-col justify-center items-center">
                 <div className="group">
