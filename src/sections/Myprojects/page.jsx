@@ -7,7 +7,16 @@ import Tayog from "../../assets/Tayog.png";
 
 const Card = ({ imageSrc, title, description, link }) => {
     return (
-        <div id ="Projects" className="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-96 transform transition-transform hover:-translate-y-2 hover:shadow-2xl hover:border-2 hover:border-blue-500">
+        <div 
+            id="Projects" 
+            className="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-96 transform transition-transform hover:-translate-y-2 hover:scale-105 hover:z-10 hover:border-2 hover:border-blue-500"
+            style={{ 
+                transition: 'transform 0.3s ease, z-index 0.3s ease, box-shadow 0.3s ease',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 10px 20px rgba(0, 0, 255, 0.8), 0 6px 6px rgba(0, 0, 255, 0.5)'}
+            onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)'}
+        >
             <img src={imageSrc} alt={title} className="w-full h-48 object-cover" />
             <div className="p-4">
                 <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
@@ -19,6 +28,8 @@ const Card = ({ imageSrc, title, description, link }) => {
         </div>
     );
 };
+
+
 
 const CardsGrid = () => {
     const cards = [
