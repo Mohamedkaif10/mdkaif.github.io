@@ -9,7 +9,7 @@ const Card = ({ imageSrc, title, description, link }) => {
     return (
         <div 
             id="Projects" 
-            className="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-96 transform transition-transform hover:-translate-y-2 hover:scale-105 hover:z-10 hover:border-2 hover:border-blue-500"
+            className="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-full sm:w-72 md:w-80 lg:w-96 transform transition-transform hover:-translate-y-2 hover:scale-105 hover:z-10 hover:border-2 hover:border-blue-500"
             style={{ 
                 transition: 'transform 0.3s ease, z-index 0.3s ease, box-shadow 0.3s ease',
                 boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
@@ -28,8 +28,6 @@ const Card = ({ imageSrc, title, description, link }) => {
         </div>
     );
 };
-
-
 
 const CardsGrid = () => {
     const cards = [
@@ -68,7 +66,7 @@ const CardsGrid = () => {
     return (
         <div className="mt-12 px-4 md:px-12">
             <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {cards.map((card, index) => (
                     <Card
                         key={index}
