@@ -9,10 +9,12 @@ const WorkExperience = () => {
         <div className="text-center">
           <p className="text-sm font-semibold mb-2">Previous Company (Internship)</p>
           <img src={Qoptars} alt="Qoptars" className="h-20 mx-auto" />
+          <p>Qoptars</p>
         </div>
         <div className="text-center">
           <p className="text-sm font-semibold mb-2">Previous Company (Internship)</p>
           <img src={Fastech} alt="Fastech" className="h-20 mx-auto" />
+          <p>Fatech one</p>
         </div>
         
       </div>
